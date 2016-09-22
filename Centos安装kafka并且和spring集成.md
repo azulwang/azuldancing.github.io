@@ -9,7 +9,7 @@ Kafka 使用Zookeeper 来保存相关配置信息，Kafka及Zookeeper 依赖Java
 - 解压到/usr/local目录下
 ```
 [root@centos local]# tar zxvf /tmp/zookeeper-3.4.8.tar.gz -C /usr/local/
-[root@centos local]# mv zookeeper-3.4.8/ zookeepermv
+[root@centos local]# mv zookeeper-3.4.8/ zookeeper
 //在/usr/local/zookeeper/conf目录下
 [root@centos conf]# cp zoo_sample.cfg zoo.cfg
 //注意
