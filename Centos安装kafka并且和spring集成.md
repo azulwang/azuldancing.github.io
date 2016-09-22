@@ -29,7 +29,7 @@ clientPort: 监听client连接的端口号.
 ```
 bin/zookeeper-server-start.sh -daemon config/zookeeper.properties
 //或者
-bin/zookeeper-server-start.sh start
+bin/zkServer.sh start &
 ```
 ###安装Kafka
 - 下载kafka_2.10-0.10.0.1.tgz
