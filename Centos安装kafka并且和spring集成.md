@@ -66,7 +66,9 @@ Hello Kafka！
 - 消费消息
 
 bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic test --from-beginning
+
 Hello world!
+
 Hello Kafka!
 
 
