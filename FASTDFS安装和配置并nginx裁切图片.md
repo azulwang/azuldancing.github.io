@@ -245,9 +245,9 @@ CORE_INCS="$CORE_INCS /usr/include/fastdfs /usr/include/fastcommon/"
 --with-http_gzip_static_module \
 --with-http_stub_status_module \
 --with-http_addition_module \
---with-http_spdy_module \
+--with-http_spdy_module \(可以不要)
 --with-pcre=/usr/local/src/pcre-8.38 \
---with-openssl=/usr/local/src/openssl \
+--with-openssl=/usr/local/src/openssl \(可以不要)
 --with-zlib=/usr/local/src/zlib-1.2.8 \
 --add-module=/usr/local/src/fastdfs-nginx-module/src
 ```
