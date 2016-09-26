@@ -64,3 +64,24 @@ server {
 可以看到百度很巧妙的利用meta的刷新作用，将baidu.com跳转到www.baidu.com.因此我们可以基于http://test.com的虚拟主机路径下也写一个index.html，
 内容就是http向https的跳转
 
+index.html
+
+```
+<html>  
+<meta http-equiv="refresh" content="0;url=https://test.com/">  
+</html>  
+```
+nginx虚拟主机配置
+```
+server {  
+    listen 192.168.1.11:80;  
+    server_name test.com;  
+      
+    location / {  
+                #index.html放在虚拟主机监听的根目录下  
+        root /srv/www/http.test.com/;  
+    }  
+        #将404的页面重定向到https的首页  
+    error_page  404 https://test.com/;  
+}  
+```
