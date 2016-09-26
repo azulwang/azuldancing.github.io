@@ -18,7 +18,7 @@ server {
         ssl_certificate /etc/nginx/ssl/nginx.crt; 
         ssl_certificate_key /etc/nginx/ssl/nginx.key;
 ```
-###二强制https转http，有3种使用方案
+###二.强制https转http，有3种使用方案
 #####1.nginx的497状态码
 
 error code 497
