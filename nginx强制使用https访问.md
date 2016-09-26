@@ -46,7 +46,7 @@ error code 497
         #让http请求重定向到https请求   
         error_page 497  https://$host$uri?$args;  
 ```
-#####nginx的rewrite方法
+#####2.nginx的rewrite方法
 思路
 
 这应该是大家最容易想到的方法，将所有的http请求通过rewrite重写到https上即可
@@ -60,7 +60,7 @@ server {
     rewrite ^(.*)$  https://$host$1 permanent;  
 } 
 ```
-#####index.html刷新网页
+#####3.index.html刷新网页
 可以看到百度很巧妙的利用meta的刷新作用，将baidu.com跳转到www.baidu.com.因此我们可以基于http://test.com的虚拟主机路径下也写一个index.html，
 内容就是http向https的跳转
 
