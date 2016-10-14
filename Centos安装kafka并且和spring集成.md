@@ -46,6 +46,21 @@ zookeeper.connection.timeout.ms=6000
 ```
 ./kafka-server-start.sh ../config/server.properties
 ```
+
+- 注意事项
+
+kafka默认使用1G内存，可以修改
+修改kafka-server-start.sh, zookeeper-server-start.sh
+export KAFKA_HEAP_OPTS="-Xmx1G -Xms1G"
+修改为
+export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M"
+
+使用守护进程方式启动
+bin/kafka-server-start.sh -daemon ./config/server.properties  &
+
+
+
+
 - 创建topic
 ```
 bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
