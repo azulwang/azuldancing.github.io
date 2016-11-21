@@ -59,7 +59,7 @@ echo "echo 3 > /proc/sys/vm/drop_caches"
 ```
 
 
-<a href="https://linux.cn/article-5627-weibo.html">参考地址</a>
+<a href="https://linux.cn/article-5627-weibo.html" target="_blank">参考地址</a>
 
 
 
