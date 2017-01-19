@@ -67,23 +67,8 @@ pid-file=/usr/local/mysql/data/mysql.pid
 socket=/usr/local/mysql/data/mysql.sock
 
 ```
-
-//在文件中加入以下内容
-[mysqld]
-basedir=/usr/local/mysql
-datadir=/usr/local/mysql/data
-socket=/tmp/mysql.sock
-port    = 3306
-user=mysql
-
-[mysqld]
-socket=/tmp/mysql.sock
-
-[mysqld_safe]
-err-log=/usr/local/mysql/data/mysql.log
-pid-file=/usr/local/mysql/data/mysql.pid
-```
 ###6.配置环境变量
+```
 vim /etc/profile
 
 //在文件的最后添加
@@ -96,4 +81,4 @@ source /etc/profile  //使环境变量生效
 
 //启动mysql服务
 # service mysqld start
-
+```
