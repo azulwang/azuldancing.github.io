@@ -83,4 +83,9 @@ source /etc/profile  //使环境变量生效
 //启动mysql服务
 # service mysqld start
 ```
+
+###7.修改mysql root 密码
+```
+SET PASSWORD = PASSWORD(‘your new password‘);
+```
 <a href="http://blog.csdn.net/qq_30949367/article/details/51065879">参考</a>
