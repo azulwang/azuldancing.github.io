@@ -2,7 +2,7 @@
 ###1.下载mysql5.7
 
 官网下载mysql-5.7.17-linux-glibc2.5-x86_64.tar.gz 
-<a href="https://cdn.mysql.com//Downloads/MySQL-5.7/mysql-5.7.17-linux-glibc2.5-x86_64.tar.gz">下载地址为</a>
+<a href="https://cdn.mysql.com//Downloads/MySQL-5.7/mysql-5.7.17-linux-glibc2.5-x86_64.tar.gz">点我下载</a>
 
 
 ###2.文件上传centos并解压为文件
